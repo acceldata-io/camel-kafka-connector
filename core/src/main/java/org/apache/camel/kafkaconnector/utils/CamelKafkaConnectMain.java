@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.ProducerTemplate;
+import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.camel.builder.DefaultErrorHandlerBuilder;
 import org.apache.camel.builder.NoErrorHandlerBuilder;
 import org.apache.camel.builder.RouteBuilder;
@@ -223,9 +224,10 @@ public class CamelKafkaConnectMain extends SimpleMain {
         public CamelKafkaConnectMain build(CamelContext camelContext) {
             CamelKafkaConnectMain camelMain = new CamelKafkaConnectMain(camelContext);
             camelMain.configure().setAutoConfigurationLogSummary(false);
-            // Off by default: route XML dump uses JAXB; on Java 17+ that can WARN (Injector.defineClass null)
-            // when optimized JAXB accessors are used. Enable only when debugging routes on older JDKs.
             camelMain.configure().setDumpRoutes(false);
+            if (camelContext instanceof DefaultCamelContext) {
+                ((DefaultCamelContext) camelContext).setDumpRoutes(Boolean.FALSE);
+            }
 
             Properties camelProperties = new Properties();
             camelProperties.putAll(props);
