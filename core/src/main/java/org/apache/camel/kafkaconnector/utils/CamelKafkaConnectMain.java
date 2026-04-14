@@ -223,8 +223,9 @@ public class CamelKafkaConnectMain extends SimpleMain {
         public CamelKafkaConnectMain build(CamelContext camelContext) {
             CamelKafkaConnectMain camelMain = new CamelKafkaConnectMain(camelContext);
             camelMain.configure().setAutoConfigurationLogSummary(false);
-            //TODO: make it configurable
-            camelMain.configure().setDumpRoutes(true);
+            // Off by default: route XML dump uses JAXB; on Java 17+ that can WARN (Injector.defineClass null)
+            // when optimized JAXB accessors are used. Enable only when debugging routes on older JDKs.
+            camelMain.configure().setDumpRoutes(false);
 
             Properties camelProperties = new Properties();
             camelProperties.putAll(props);
