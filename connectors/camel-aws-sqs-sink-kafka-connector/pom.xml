@@ -45,7 +45,7 @@
     <kafka.libs.okio>3.9.1</kafka.libs.okio>
     <kafka.libs.kotlin>1.9.25</kafka.libs.kotlin>
     <kafka.libs.snakeyaml-engine>2.7</kafka.libs.snakeyaml-engine>
-    <kafka.libs.avro>1.11.4</kafka.libs.avro>
+    <kafka.libs.avro>1.12.1</kafka.libs.avro>
     <kafka.libs.guava>33.3.1-jre</kafka.libs.guava>
   </properties>
   <dependencyManagement>
