@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.apache.camel.kafkaconnector</groupId>
         <artifactId>archetypes</artifactId>
-        <version>3.21.0</version>
+        <version>3.21.0.2.8.2.3.3.6.5-SNAPSHOT</version>
     </parent>
 
     <groupId>org.apache.camel.kafkaconnector.archetypes</groupId>
