@@ -4,13 +4,13 @@
     <parent>
         <groupId>org.apache.camel.kafkaconnector</groupId>
         <artifactId>camel-kafka-connector-aggregator</artifactId>
-        <version>4.18.0</version>
+        <version>4.18.0.4.3.0.3.3.6.5-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
 
     <groupId>org.apache.camel.kafkaconnector</groupId>
     <artifactId>parent</artifactId>
-    <version>4.18.0</version>
+    <version>4.18.0.4.3.0.3.3.6.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Camel-Kafka-Connector :: Parent</name>
@@ -27,7 +27,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <kafka.version>3.9.1</kafka.version>
+        <kafka.version>4.3.0.3.3.6.5-SNAPSHOT</kafka.version>
         <camel.version>4.18.0</camel.version>
         <camel.kamelet.catalog.version>4.18.0</camel.kamelet.catalog.version>
         <apicurio.registry.version>2.5.11.Final</apicurio.registry.version>
@@ -49,7 +49,7 @@
         <version.maven.jar>3.1.0</version.maven.jar>
         <version.maven.failsafe>3.2.5</version.maven.failsafe>
         <version.maven.surefire>3.2.5</version.maven.surefire>
-        <version.scala.library>2.12.12</version.scala.library>
+        <version.scala.library>2.13.16</version.scala.library>
         <version.maven.maven-remote-resources-plugin>1.6.0</version.maven.maven-remote-resources-plugin>
 
         <version.maven.checkstyle>8.29</version.maven.checkstyle>
@@ -137,7 +137,7 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka_2.12</artifactId>
+                <artifactId>kafka_2.13</artifactId>
                 <version>${kafka.version}</version>
                 <classifier>test</classifier>
                 <type>test-jar</type>
@@ -151,7 +151,7 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka_2.12</artifactId>
+                <artifactId>kafka_2.13</artifactId>
                 <version>${kafka.version}</version>
                 <scope>test</scope>
             </dependency>
