@@ -31,6 +31,7 @@
         <camel.version>4.18.0</camel.version>
         <camel.kamelet.catalog.version>4.18.0</camel.kamelet.catalog.version>
         <apicurio.registry.version>2.5.11.Final</apicurio.registry.version>
+        <avro.version>1.12.1</avro.version>
         <resteasy.version>4.5.6.Final</resteasy.version>
         <version.java>17</version.java>
         <version.guava>20.0</version.guava>
@@ -112,6 +113,12 @@
                 <groupId>org.jctools</groupId>
                 <artifactId>jctools-core</artifactId>
                 <version>${version.jctools}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro</artifactId>
+                <version>${avro.version}</version>
             </dependency>
 
             <!--  Kafka dependencies -->
