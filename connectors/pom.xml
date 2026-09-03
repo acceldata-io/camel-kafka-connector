@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache.camel.kafkaconnector</groupId>
         <artifactId>parent</artifactId>
-        <version>4.18.0.4.3.0.3.3.6.5-SNAPSHOT</version>
+        <version>4.18.0.4.3.0.3.4.3.0-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
@@ -148,7 +148,7 @@
                    <configuration>
                        <encoding>UTF-8</encoding>
                        <outputDirectory>${project.basedir}/../../camel-kafka-connector-catalog/src/generated/resources/connectors/</outputDirectory>
-                       <resources>          
+                       <resources>
                            <resource>
                                <directory>src/generated/resources</directory>
                                <filtering>true</filtering>
@@ -156,8 +156,8 @@
                                    <include>*.json</include>
                                </includes>
                            </resource>
-                       </resources>              
-                  </configuration>            
+                       </resources>
+                  </configuration>
                   </execution>
             </executions>
             </plugin>

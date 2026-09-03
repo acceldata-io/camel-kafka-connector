@@ -4,13 +4,13 @@
     <parent>
         <groupId>org.apache.camel.kafkaconnector</groupId>
         <artifactId>camel-kafka-connector-aggregator</artifactId>
-        <version>4.18.0.4.3.0.3.3.6.5-SNAPSHOT</version>
+        <version>4.18.0.4.3.0.3.4.3.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
 
     <groupId>org.apache.camel.kafkaconnector</groupId>
     <artifactId>parent</artifactId>
-    <version>4.18.0.4.3.0.3.3.6.5-SNAPSHOT</version>
+    <version>4.18.0.4.3.0.3.4.3.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Camel-Kafka-Connector :: Parent</name>
@@ -27,7 +27,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <kafka.version>4.3.0.3.3.6.5-SNAPSHOT</kafka.version>
+        <kafka.version>4.3.0.3.4.3.0-SNAPSHOT</kafka.version>
         <camel.version>4.18.0</camel.version>
         <camel.kamelet.catalog.version>4.18.0</camel.kamelet.catalog.version>
         <apicurio.registry.version>2.5.11.Final</apicurio.registry.version>
